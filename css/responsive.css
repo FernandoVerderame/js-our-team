@@ -1,0 +1,13 @@
+/* Tablet */
+@media screen and (max-width: 1200px){
+    .padding .col {
+        flex-basis: calc(100% / 2);
+    }
+}
+
+/* Smartphone */
+@media screen and (max-width: 768px){
+    .padding .col {
+        flex-basis: 100%;
+    }
+}
