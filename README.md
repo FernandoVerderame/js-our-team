@@ -25,3 +25,12 @@ Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
 Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
 Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg
+
+
+
+
+## SCALETTA
+1. Creo un array di oggetti con le informazioni fornite
+2. Stampo su console le informazioni
+3. Stampo le stesse informazioni su DOM sottoforma di stringhe
+4. Stilizzo le informazioni in pagina
