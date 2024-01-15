@@ -29,6 +29,10 @@ body {
     background-color: #F5F5F1;
 }
 
+h1 {
+    margin-top: 50px;
+}
+
 h3 {
     font-size: 28px;
     font-weight: 500;
@@ -39,6 +43,17 @@ h4 {
     font-size: 18px;
     font-weight: 500;
 
+}
+
+/* ! Header */
+header {
+    text-align: center;
+}
+
+header p {
+    color: #67615A;
+    margin: 30px 0;
+    line-height: 25px;
 }
 
 /* ! Main */

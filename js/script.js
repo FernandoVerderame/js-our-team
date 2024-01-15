@@ -33,7 +33,7 @@ for (let i = 0; i < teamInformations.length; i++) {
     */
 
     row += `
-    <div class="col border">
+    <div class="col">
         <div class="card">
             <div class="card-image">
                 <img src="img/${employee['picture']}" alt="foto_${i+1}">
