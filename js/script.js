@@ -19,4 +19,7 @@ for (let i = 0; i < teamInformations.length; i++) {
 
     // Stampo i ruoli
     console.log(`Ruolo: ${employee['role']}`);
+
+    // Stampo le foto
+    console.log(`Foto: ${employee['picture']}`);
 }
