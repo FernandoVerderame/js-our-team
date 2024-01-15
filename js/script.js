@@ -1,3 +1,6 @@
+// Prendo gli elementi dal DOM
+const list = document.getElementById('list');
+
 // Creo l'array
 const teamInformations = [
     {name: 'Wayne Barnett', role: 'Founder & CEO', picture: 'wayne-barnett-founder-ceo.jpg'},
@@ -9,11 +12,14 @@ const teamInformations = [
 ];
 
 
+let items = ''; 
+
 // Stampo le informazioni in console
 for (let i = 0; i < teamInformations.length; i++) {
 
     const employee = teamInformations[i]; 
 
+    /*
     // Stampo i nomi
     console.log(`Nome: ${employee['name']}`);
 
@@ -22,4 +28,17 @@ for (let i = 0; i < teamInformations.length; i++) {
 
     // Stampo le foto
     console.log(`Foto: ${employee['picture']}`);
+    */
+
+    items += `
+    <li>
+        <img src="${employee['picture']}" alt="foto ${i+1}">
+        <h3>Nome: ${employee['name']}</h3>
+        <h4>Ruolo: ${employee['role']}</h4>   
+    </li>
+    `
 }
+
+
+// Stampo in pagina la lista di informazioni
+list.innerHTML = items;
