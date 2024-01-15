@@ -1,5 +1,7 @@
 // Prendo gli elementi dal DOM
-const list = document.getElementById('list');
+// const list = document.getElementById('list');
+
+const mainContent = document.getElementById('main-content');
 
 // Creo l'array
 const teamInformations = [
@@ -12,7 +14,7 @@ const teamInformations = [
 ];
 
 
-let items = ''; 
+let row = '<div class="row padding">';
 
 // Stampo le informazioni in console
 for (let i = 0; i < teamInformations.length; i++) {
@@ -30,15 +32,24 @@ for (let i = 0; i < teamInformations.length; i++) {
     console.log(`Foto: ${employee['picture']}`);
     */
 
-    items += `
-    <li>
-        <img src="${employee['picture']}" alt="foto ${i+1}">
-        <h3>Nome: ${employee['name']}</h3>
-        <h4>Ruolo: ${employee['role']}</h4>   
-    </li>
-    `
+    row += `
+    <div class="col border">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/${employee['picture']}" alt="foto_${i+1}">
+            </div>
+            <div class="card-info">
+                <h3>${employee['name']}</h3>
+                <h4>${employee['role']}</h4>
+            </div>
+        </div>
+    </div>
+    `;
 }
 
+row += `
+</div>
+`;
 
 // Stampo in pagina la lista di informazioni
-list.innerHTML = items;
+mainContent.innerHTML = row;
