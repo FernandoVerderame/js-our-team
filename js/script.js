@@ -7,3 +7,13 @@ const teamInformations = [
     {name: 'Scott Estrada', role: 'Developer', picture: 'scott-estrada-developer.jpg'},
     {name: 'Barbara Ramos', role: 'Graphic Designer', picture: 'barbara-ramos-graphic-designer.jpg'}
 ];
+
+
+// Stampo le informazioni in console
+for (let i = 0; i < teamInformations.length; i++) {
+
+    const employee = teamInformations[i]; 
+
+    // Stampo i nomi
+    console.log(`Nome: ${employee['name']}`);
+}
