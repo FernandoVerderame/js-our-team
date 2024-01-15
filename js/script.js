@@ -16,4 +16,7 @@ for (let i = 0; i < teamInformations.length; i++) {
 
     // Stampo i nomi
     console.log(`Nome: ${employee['name']}`);
+
+    // Stampo i ruoli
+    console.log(`Ruolo: ${employee['role']}`);
 }
